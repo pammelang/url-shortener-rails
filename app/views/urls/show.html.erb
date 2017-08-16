@@ -1,0 +1,17 @@
+
+<h1>
+  <strong>Short url: </strong>
+<%= 'localhost:3000/' + @url.short_url %>
+</h1>
+
+<p>
+  <strong>Number of accesses: </strong>
+  <%= @url.clicks %>
+</p>
+
+<p>
+  <strong>IP address: </strong>
+  <%= @url.ip_address %>
+</p>
+
+<%= link_to 'Back', urls_path %>
