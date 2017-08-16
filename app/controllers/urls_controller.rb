@@ -15,9 +15,9 @@ class UrlsController < ApplicationController
       if redirect_to "#{@url.original_url}"
         @url.clicks += 1
         @url.save
-
       end
     else
+      @base_url = "#{request.protocol}#{request.host_with_port}/"
       @url = Url.find(params[:id])
     end
   end
