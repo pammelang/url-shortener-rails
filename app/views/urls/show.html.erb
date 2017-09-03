@@ -11,7 +11,9 @@
 
 <p>
   <strong>IP address: </strong>
-  <%= @url.ip_address %>
+  <% @url.ip_addresses.each do |ip| %>
+    <%= if !ip.nil? then ip end %><br>
+  <% end %>
 </p>
 
 <%= link_to 'Back', urls_path %>
