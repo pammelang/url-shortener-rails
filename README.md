@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The first page takes in the input url and creates a short token and stores it in the database. 
 
-Things you may want to cover:
+Once you submit the url, a new page will be called and will display the shortened url, as well as other details, such as the number of clicks and the ip address. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+There is also an index page which shows all the saved URLs. 
